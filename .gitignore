@@ -1,0 +1,53 @@
+# OS generated files
+.DS_Store*
+Icon?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.directory
+.iml
+
+# npm
+# package-lock.json
+node_modules
+.npm
+build
+*.tgz
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# build files
+dist
+
+# log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# test
+test/unit/opencv/check
+test/unit/opencv/source
+test/crawler/download
+
+# dev-tools
+#dev-tools/model/images
+#dev-tools/store/images
+
+# stuff
+.idea
+.vscode
+coverage
+.nyc_output
+
+# local config
+config/development.*.json
+
+# crash report
+report.*
+
+# token files
+.googletoken
