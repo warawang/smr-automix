@@ -24,8 +24,12 @@ async function sync() {
     m3u += item2m3u(item);
   }
 
-  fs.writeFileSync(OUTPUT_PATH, m3u);
-  console.log('- synced at ' + new Date());
+  try {
+    fs.writeFileSync(OUTPUT_PATH, m3u);
+    console.log('- synced at ' + new Date());
+  } catch(e) {
+    console.error(e);
+  }
 }
 
 function item2m3u(item: any): string {
